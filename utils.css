@@ -1,0 +1,134 @@
+/*********************** FLEX  */
+.flex {
+    display: flex;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+/*********************** Other displays  */
+.block {
+    display: block;
+}
+
+/*********************** POSITION  */
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.grid {
+    display: grid;
+}
+
+/*********************** PADDING  */
+.py-0 {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.py-2 {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.px-3 {
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+}
+
+.pt-4 {
+    padding-top: 1em;
+}
+
+.px-8 {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+/*********************** MARGIN  */
+.mt-0 {
+    margin-top: 0;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.ml-0 {
+    margin-left: 0;
+}
+
+.mr-1 {
+    margin-right: 0.3em;
+}
+
+.mr-1 {
+    margin-right: 0.25em;
+}
+
+.mb-2 {
+    margin-bottom: 0.5em;
+}
+
+.m-2 {
+    margin: 0.5em;
+}
+
+.my-2 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.m-4 {
+    margin: 1em;
+}
+
+.ml-4 {
+    margin-left: 1em;
+}
+
+.m-6 {
+    margin: 1.5em;
+}
+
+/*********************** FONTS AND TEXT-ALIGN   */
+.text-center {
+    text-align: center;
+}
