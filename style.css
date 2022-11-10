@@ -1,6 +1,52 @@
+@import "./utils.css";
+
 :root {
     --primary-gray: #767676;
     --gray-1: #eeeeee;
     --white: #ffffff;
     ---black: #111111;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body * {
+    box-sizing: inherit;
+}
+
+img {
+    width: 100%;
+}
+
+.gallery-column {
+    flex-basis: 31%;
+}
+
+.gallery-column img {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+@media screen and (max-width:980px) {
+    .gallery-column:last-child {
+        display: none;
+    }
+
+    .gallery-column {
+        flex-basis: 45%;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .gallery-column:last-child,
+    .gallery-column:nth-last-child(2) {
+        display: none;
+    }
+
+    .gallery-column {
+        flex-basis: 90%;
+    }
 }
