@@ -10,6 +10,55 @@
 </head>
 
 <body>
+    <nav>
+        <div class="flex justify-between align-center mb-6 mx-4 mt-4 flex-wrap gap-x-1 top-navbar">
+            <div class="flex align center justify-between gap-x-4">
+                <a href="https://unsplash.com/"> <img src="./assets/unsplash-logo.webp" alt="logo" width="55"> </a>
+                <form class="relative">
+                    <input class="text-input text-input-with-icon search-input" placeholder=" Search" type="text"
+                        name="search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z" />
+                    </svg>
+                    <input hidden type="submit" value="Search" />
+                </form>
+            </div>
+            <div class="flex align-center justify-between gap-x-4 top-navbar__item--desktop-only">
+                <a href="https://unsplash.com/explore"> Explore </a>
+                <a href="https://unsplash.com/advertise"> Advertise </a>
+                <a href="https://unsplash.com/plus" class="gradient"> Unsplash + </a>
+            </div>
+            <div class="navbar_divider top-navbar__item--desktop-only"> </div>
+            <div class="flex align-center justify-around gap-2 top-navbar__item--desktop-only">
+                <a href="https://unsplash.com/login"> Log in </a>
+                <p> / </p>
+                <a href="https://unsplash.com/join"> Sign up </a>
+            </div>
+            <button type="button" class=" btn btn--border top-navbar__item--desktop-only "> Submit a photo </button>
+            <button type="button" class="btn "> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path
+                        d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                </svg> </button>
+        </div>
+        <div class="flex align-center justify-between m-4 mb-6 bottom-navbar">
+            <div> <a href="https://unsplash.com/" class="pb-4 bottom-navbar_item--active"> Editorial </a>
+            </div>
+            <div class="navbar_divider inline"> </div>
+            <a href="https://unsplash.com/t/experimental"> Experimental </a>
+            <a href="https://unsplash.com/t/3d-renders"> 3D Renders </a>
+            <a href="https://unsplash.com/t/architecture-interior"> Architecture & Interiors </a>
+            <a href="https://unsplash.com/t/fashion-beauty"> Fashion & Beauty </a>
+            <a href="https://unsplash.com/t/current-events"> Current events </a>
+            <a href="https://unsplash.com/t/nature"> Nature </a>
+            <a href="https://unsplash.com/t/food-drink"> Food & Drink </a>
+            <a href="https://unsplash.com/t/film"> Film </a>
+            <a href="https://unsplash.com/t/people"> People </a>
+            <a href="https://unsplash.com/t/athletics"> Athletics </a>
+            <a href="https://unsplash.com/t/street-photography"> Street Photography </a>
+        </div>
+        </div>
+    </nav>
     <main>
         <div class="flex justify-evenly">
             <div class="flex column gallery-column">
