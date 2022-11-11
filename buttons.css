@@ -1,0 +1,21 @@
+.btn {
+    font-size: inherit;
+    background-color: var(--white);
+    color: var(--primary-gray);
+    border: 0;
+}
+
+.btn--border {
+    border: solid 1px var(--gray-2);
+    border-radius: 0.3em;
+    padding: 0.5em;
+}
+
+.btn--border:hover {
+    color: var(---black);
+    border-color: var(---black);
+}
+
+.btn svg:hover {
+    fill: var(---black);
+}

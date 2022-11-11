@@ -1,15 +1,22 @@
 @import "./utils.css";
+@import "./buttons.css";
+@import "./inputs.css";
 
 :root {
     --primary-gray: #767676;
     --gray-1: #eeeeee;
     --white: #ffffff;
+    --gray-2: #d1d1d1;
     ---black: #111111;
 }
+
+/* Generics */
 
 body {
     box-sizing: border-box;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
 }
 
 body * {
@@ -17,6 +24,11 @@ body * {
 }
 
 img {
+    margin: 0;
+    padding: 0;
+}
+
+main img {
     width: 100%;
 }
 
@@ -29,6 +41,71 @@ img {
     margin-bottom: 0.5em;
 }
 
+body svg {
+    box-sizing: initial;
+}
+
+/* navbar */
+
+nav {
+    background-color: var(--white)
+}
+
+nav svg {
+    font-size: inherit;
+    fill: var(--primary-gray);
+    width: 1em;
+}
+
+.search-input {
+    width: 50vw;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-gray);
+}
+
+.navbar_divider {
+    background-color: var(--primary-gray);
+    height: 2em;
+    width: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    color: var(---black);
+}
+
+.gradient {
+    background: linear-gradient(135deg, #fa00ff, #00e0ff 50%, #fa00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bottom-navbar_item--active {
+    border-bottom: solid 3px var(---black);
+    color: var(---black);
+}
+
+
+/* making the page responsive */
+
+@media screen and (max-width:1200px) {
+    .search-input {
+        width: 30vw;
+    }
+
+    .bottom-navbar {
+        overflow: auto;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        gap: 1em;
+        justify-content: space-between;
+    }
+}
+
 @media screen and (max-width:980px) {
     .gallery-column:last-child {
         display: none;
@@ -37,9 +114,23 @@ img {
     .gallery-column {
         flex-basis: 45%;
     }
+
+    .search-input {
+        width: 20vw;
+    }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:770px) {
+    .search-input {
+        width: 60vw;
+    }
+
+    .top-navbar__item--desktop-only {
+        display: none;
+    }
+}
+
+@media screen and (max-width:700px) {
 
     .gallery-column:last-child,
     .gallery-column:nth-last-child(2) {
@@ -48,5 +139,17 @@ img {
 
     .gallery-column {
         flex-basis: 90%;
+    }
+}
+
+@media screen and (max-width:400px) {
+
+
+    .bottom-navbar_item--active {
+        border: 0;
+    }
+
+    .bottom-navbar {
+        font-size: 14px;
     }
 }
