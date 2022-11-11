@@ -51,7 +51,7 @@ nav {
     background-color: var(--white)
 }
 
-nav svg {
+svg {
     font-size: inherit;
     fill: var(--primary-gray);
     width: 1em;
@@ -89,11 +89,66 @@ a:hover {
     color: var(---black);
 }
 
+/* hero section */
+
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 82vh;
+    color: var(--white);
+    background-image: url(./assets/hero-image_large.jpeg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero h2 {
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+}
+
+.hero .search-input {
+    border-radius: 0.5em;
+}
+
+.hero a {
+    color: var(--gray-2);
+    text-decoration: none;
+}
+
+.hero-footer {
+    bottom: 0;
+    padding-left: 1em;
+    width: 100%;
+}
+
+.hero-footer p {
+    color: var(--primary-gray);
+}
+
+.hero--license-info {
+    transform: translateX(-50%);
+}
+
+.hero-footer a {
+    color: var(--gray-2);
+}
+
+.hero-footer a:hover {
+    color: var(--white);
+}
 
 /* making the page responsive */
 
 @media screen and (max-width:1200px) {
-    .search-input {
+    nav .search-input {
         width: 30vw;
     }
 
@@ -115,13 +170,13 @@ a:hover {
         flex-basis: 45%;
     }
 
-    .search-input {
+    nav .search-input {
         width: 20vw;
     }
 }
 
 @media screen and (max-width:770px) {
-    .search-input {
+    nav .search-input {
         width: 60vw;
     }
 
@@ -140,10 +195,13 @@ a:hover {
     .gallery-column {
         flex-basis: 90%;
     }
+
+    .hero_item--desktop-only {
+        display: none;
+    }
 }
 
 @media screen and (max-width:400px) {
-
 
     .bottom-navbar_item--active {
         border: 0;
@@ -151,5 +209,26 @@ a:hover {
 
     .bottom-navbar {
         font-size: 14px;
+    }
+
+    .hero {
+        height: 30vh;
+        align-items: flex-start;
+        padding-left: 0.5em;
+        background-image: url(./assets/hero-image_small.jpeg);
+
+    }
+
+    .hero h1 {
+        font-size: 2em;
+        margin-top: 0;
+        margin-bottom: 0.5em;
+    }
+
+    .hero h2 {
+        margin-top: 0;
+        margin-bottom: 0.5em;
+        font-size: 1em;
+        font-weight: normal;
     }
 }
