@@ -51,6 +51,10 @@
     column-gap: 1em;
 }
 
+.basis-3-6 {
+    flex-basis: 50%;
+}
+
 /*********************** Other displays  */
 .block {
     display: block;
@@ -168,4 +172,12 @@
 /*********************** FONTS AND TEXT-ALIGN   */
 .text-center {
     text-align: center;
+}
+
+.text-start {
+    text-align: start;
+}
+
+.gap-2 {
+    gap: 0.5em;
 }
