@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=assets, initial-scale=1.0">
     <title>Unsplash</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -93,160 +94,798 @@
     <main>
         <div class="flex justify-evenly">
             <div class="flex column gallery-column">
+                <div class="gallery-column_image relative mt-8">
 
-                <img srcset="./assets/Picture-1_small.jpg 400w,
+                    <div class="overlay"> <a class="image-card__profile ml-2" href="https://unsplash.com/@hiestudio">
+                            Zhao
+                            Yangyang </a>
+                    </div>
+
+                    <img srcset="./assets/Picture-1_small.jpg 400w,
                              ./assets/Picture-1_medium.jpg 800w, 
                              ./assets/Picture-1_large.jpg 1500w" alt="picture-1" sizes="
                              (min-width: 980px) 31vw,
                              (min-width: 700px) and (max-width: 980px) 45vw,
                              100vw" src="./assets/Picture-1_medium.jpg" loading="lazy" />
-                <img srcset="./assets/Picture-2_small.jpeg 400w, 
+
+                    <div class="overlay flex justify-between">
+                        <div class="flex justify-between gap-2">
+                            <button class="image-card__add-button " type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                                </svg> </button>
+                            <button class=" image-card__like-button" type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path
+                                        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+                                </svg> </button>
+                        </div>
+                        <button class=" image-card__download-button" type="button"> <svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zM432 456c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z" />
+                            </svg> </button>
+                    </div>
+                </div>
+
+                <div class="gallery-column_image relative mt-8">
+
+                    <div class="overlay"> <a class="image-card__profile ml-2" href="https://unsplash.com/@hiestudio">
+                            Zhao
+                            Yangyang </a>
+                    </div>
+
+                    <img srcset="./assets/Picture-2_small.jpeg 400w, 
                              ./assets/Picture-2_medium.jpeg 800w, 
                              ./assets/Picture-2_large.jpeg 1500w" alt="picture-2" sizes="
                              (min-width: 980px) 31vw,
                              (min-width: 700px) and (max-width: 980px) 45vw,
                              100vw" src="./assets/Picture-2_medium.jpeg" loading="lazy" />
-                <img srcset="./assets/Picture-3_small.jpeg 400w, 
+
+                    <div class="overlay flex justify-between">
+                        <div class="flex justify-between gap-2">
+                            <button class="image-card__add-button " type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                                </svg> </button>
+                            <button class=" image-card__like-button" type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path
+                                        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+                                </svg> </button>
+                        </div>
+                        <button class=" image-card__download-button" type="button"> <svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zM432 456c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z" />
+                            </svg> </button>
+                    </div>
+                </div>
+
+                <div class="gallery-column_image relative mt-8">
+                    <div class="overlay"> <a class="image-card__profile ml-2" href="https://unsplash.com/@hiestudio">
+                            Zhao
+                            Yangyang </a>
+                    </div>
+
+                    <img srcset="./assets/Picture-3_small.jpeg 400w, 
                              ./assets/Picture-3_medium.jpeg 800w, 
                              ./assets/Picture-3_large.jpeg 1500w" alt="picture-3" sizes="
                              (min-width: 980px) 31vw,
                              (min-width: 700px) and (max-width: 980px) 45vw,
                              100vw" src="./assets/Picture-3_medium.jpeg" loading="lazy" />
 
-                <img srcset="./assets/Picture-4_small.jpeg 400w, 
+                    <div class="overlay flex justify-between">
+                        <div class="flex justify-between gap-2">
+                            <button class="image-card__add-button " type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                                </svg> </button>
+                            <button class=" image-card__like-button" type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path
+                                        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+                                </svg> </button>
+                        </div>
+                        <button class=" image-card__download-button" type="button"> <svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zM432 456c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z" />
+                            </svg> </button>
+                    </div>
+                </div>
+
+                <div class="gallery-column_image relative mt-8">
+                    <div class="overlay"> <a class="image-card__profile ml-2" href="https://unsplash.com/@hiestudio">
+                            Zhao
+                            Yangyang </a>
+                    </div>
+                    <img srcset="./assets/Picture-4_small.jpeg 400w, 
                              ./assets/Picture-4_medium.jpeg 800w, 
                              ./assets/Picture-4_large.jpeg 1500w" alt="picture-4" sizes="
                              (min-width: 980px) 31vw,
                              (min-width: 700px) and (max-width: 980px) 45vw,
                              100vw" src="./assets/Picture-4_medium.jpeg" loading="lazy" />
 
-                <img srcset="./assets/Picture-5_small.jpeg 400w, 
+                    <div class="overlay flex justify-between">
+                        <div class="flex justify-between gap-2">
+                            <button class="image-card__add-button " type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                                </svg> </button>
+                            <button class=" image-card__like-button" type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path
+                                        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+                                </svg> </button>
+                        </div>
+                        <button class=" image-card__download-button" type="button"> <svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zM432 456c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z" />
+                            </svg> </button>
+                    </div>
+                </div>
+
+
+                <div class="gallery-column_image relative mt-8">
+                    <div class="overlay"> <a class="image-card__profile ml-2" href="https://unsplash.com/@hiestudio">
+                            Zhao
+                            Yangyang </a>
+                    </div>
+
+                    <img srcset="./assets/Picture-5_small.jpeg 400w, 
                              ./assets/Picture-5_medium.jpeg 800w, 
                              ./assets/Picture-5_large.jpeg 1500w" alt="picture-5" sizes="
                             (min-width: 980px) 31vw,
                             (min-width: 700px) and (max-width: 980px) 45vw,
                             100vw" src="./assets/Picture-5_medium.jpeg" loading="lazy" />
-                <img srcset="./assets/Picture-6_small.jpeg 400w, 
+
+                    <div class="overlay flex justify-between">
+                        <div class="flex justify-between gap-2">
+                            <button class="image-card__add-button " type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                                </svg> </button>
+                            <button class=" image-card__like-button" type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path
+                                        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+                                </svg> </button>
+                        </div>
+                        <button class=" image-card__download-button" type="button"> <svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zM432 456c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z" />
+                            </svg> </button>
+                    </div>
+                </div>
+
+                <div class="gallery-column_image relative mt-8">
+                    <div class="overlay"> <a class="image-card__profile ml-2" href="https://unsplash.com/@hiestudio">
+                            Zhao
+                            Yangyang </a>
+                    </div>
+                    <img srcset="./assets/Picture-6_small.jpeg 400w, 
                             ./assets/Picture-6_medium.jpeg 800w, 
                            ./assets/Picture-6_large.jpeg 1500w" alt="picture-6" sizes="
                           (min-width: 980px) 31vw,
                           (min-width: 700px) and (max-width: 980px) 45vw,
                           100vw" src="./assets/Picture-6_medium.jpeg" loading="lazy" />
-                <img srcset="./assets/Picture-7_small.jpeg 400w, 
+                    <div class="overlay flex justify-between">
+                        <div class="flex justify-between gap-2">
+                            <button class="image-card__add-button " type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                                </svg> </button>
+                            <button class=" image-card__like-button" type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path
+                                        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+                                </svg> </button>
+                        </div>
+                        <button class=" image-card__download-button" type="button"> <svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zM432 456c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z" />
+                            </svg> </button>
+                    </div>
+                </div>
+
+                <div class="gallery-column_image relative mt-8">
+                    <div class="overlay"> <a class="image-card__profile ml-2" href="https://unsplash.com/@hiestudio">
+                            Zhao
+                            Yangyang </a>
+                    </div>
+                    <img srcset="./assets/Picture-7_small.jpeg 400w, 
                           ./assets/Picture-7_medium.jpeg 800w, 
                           ./assets/Picture-7_large.jpeg 1500w" alt="picture-7" sizes="
                          (min-width: 980px) 31vw,
                          (min-width: 700px) and (max-width: 980px) 45vw,
                          100vw" src="./assets/Picture-7_medium.jpeg" loading="lazy" />
-                <img srcset="./assets/Picture-8_small.jpeg 400w, 
+                    <div class="overlay flex justify-between">
+                        <div class="flex justify-between gap-2">
+                            <button class="image-card__add-button " type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                                </svg> </button>
+                            <button class=" image-card__like-button" type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path
+                                        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+                                </svg> </button>
+                        </div>
+                        <button class=" image-card__download-button" type="button"> <svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zM432 456c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z" />
+                            </svg> </button>
+                    </div>
+                </div>
+
+                <div class="gallery-column_image relative mt-8">
+                    <div class="overlay"> <a class="image-card__profile ml-2" href="https://unsplash.com/@hiestudio">
+                            Zhao
+                            Yangyang </a>
+                    </div>
+                    <img srcset="./assets/Picture-8_small.jpeg 400w, 
                              ./assets/Picture-8_medium.jpeg 800w, 
                              ./assets/Picture-8_large.jpeg 1500w" alt="picture-8" sizes="
                              (min-width: 980px) 31vw,
                              (min-width: 700px) and (max-width: 980px) 45vw,
                              100vw" src="./assets/Picture-8_medium.jpeg" loading="lazy" />
+                    <div class="overlay flex justify-between">
+                        <div class="flex justify-between gap-2">
+                            <button class="image-card__add-button " type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                                </svg> </button>
+                            <button class=" image-card__like-button" type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path
+                                        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+                                </svg> </button>
+                        </div>
+                        <button class=" image-card__download-button" type="button"> <svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zM432 456c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z" />
+                            </svg> </button>
+                    </div>
+                </div>
             </div>
+
             <div class="flex column gallery-column">
-                <img srcset="./assets/Picture-9_small.jpeg 400w, 
+                <div class="gallery-column_image relative mt-8">
+                    <div class="overlay"> <a class="image-card__profile ml-2" href="https://unsplash.com/@hiestudio">
+                            Zhao
+                            Yangyang </a>
+                    </div>
+                    <img srcset="./assets/Picture-9_small.jpeg 400w, 
                              ./assets/Picture-9_medium.jpeg 800w,
                              ./assets/Picture-9_large.jpeg 1500w" alt="picture-9" sizes="
                              (min-width: 980px) 31vw,
                              (min-width: 700px) and (max-width: 980px) 45vw,
                              100vw" src="./assets/Picture-9_medium.jpeg" loading="lazy" />
+                    <div class="overlay flex justify-between">
+                        <div class="flex justify-between gap-2">
+                            <button class="image-card__add-button " type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                                </svg> </button>
+                            <button class=" image-card__like-button" type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path
+                                        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+                                </svg> </button>
+                        </div>
+                        <button class=" image-card__download-button" type="button"> <svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zM432 456c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z" />
+                            </svg> </button>
+                    </div>
+                </div>
 
-                <img srcset="./assets/Picture-10_small.jpeg 400w, 
+
+                <div class="gallery-column_image relative mt-8">
+                    <div class="overlay"> <a class="image-card__profile ml-2" href="https://unsplash.com/@hiestudio">
+                            Zhao
+                            Yangyang </a>
+                    </div>
+                    <img srcset="./assets/Picture-10_small.jpeg 400w, 
                              ./assets/Picture-10_medium.jpeg 800w, 
                              ./assets/Picture-10_large.jpeg 1500w" alt="picture-10" sizes="
                              (min-width: 980px) 31vw,
                              (min-width: 700px) and (max-width: 980px) 45vw,
                              100vw" src=".assets/Picture-10_medium.jpeg" loading="lazy" />
+                    <div class="overlay flex justify-between">
+                        <div class="flex justify-between gap-2">
+                            <button class="image-card__add-button " type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                                </svg> </button>
+                            <button class=" image-card__like-button" type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path
+                                        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+                                </svg> </button>
+                        </div>
+                        <button class=" image-card__download-button" type="button"> <svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zM432 456c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z" />
+                            </svg> </button>
+                    </div>
+                </div>
 
-                <img srcset="./assets/Picture-11_small.jpeg 400w, 
+                <div class="gallery-column_image relative mt-8">
+                    <div class="overlay"> <a class="image-card__profile ml-2" href="https://unsplash.com/@hiestudio">
+                            Zhao
+                            Yangyang </a>
+                    </div>
+                    <img srcset="./assets/Picture-11_small.jpeg 400w, 
                              ./assets/Picture-11_medium.jpeg 600w, 
                              ./assets/Picture-11_large.jpeg 1500w" sizes="
                              (min-width: 980px) 31vw,
                              (min-width: 700px) and (max-width: 980px) 45vw,
                              100vw" alt="picture-11" src="./assets/Picture-11_medium.jpeg" loading="lazy" />
-                <img srcset="./assets/Picture-12_small.jpeg 600w, 
+                    <div class="overlay flex justify-between">
+                        <div class="flex justify-between gap-2">
+                            <button class="image-card__add-button " type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                                </svg> </button>
+                            <button class=" image-card__like-button" type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path
+                                        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+                                </svg> </button>
+                        </div>
+                        <button class=" image-card__download-button" type="button"> <svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zM432 456c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z" />
+                            </svg> </button>
+                    </div>
+                </div>
+
+
+                <div class="gallery-column_image relative mt-8">
+                    <div class="overlay"> <a class="image-card__profile ml-2" href="https://unsplash.com/@hiestudio">
+                            Zhao
+                            Yangyang </a>
+                    </div>
+                    <img srcset="./assets/Picture-12_small.jpeg 600w, 
                              ./assets/Picture-12_medium.jpeg 800w, 
                              ./assets/Picture-12_large.jpeg 1500w" sizes="
                              (min-width: 980px) 31vw,
                              (min-width: 700px) and (max-width: 980px) 45vw,
                              100vw" alt="picture-12" src="./assets/Picture-12_medium.jpeg" loading="lazy" />
-                <img srcset="./assets/Picture-13_small.jpeg 600w, 
+                    <div class="overlay flex justify-between">
+                        <div class="flex justify-between gap-2">
+                            <button class="image-card__add-button " type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                                </svg> </button>
+                            <button class=" image-card__like-button" type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path
+                                        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+                                </svg> </button>
+                        </div>
+                        <button class=" image-card__download-button" type="button"> <svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zM432 456c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z" />
+                            </svg> </button>
+                    </div>
+                </div>
+
+
+
+                <div class="gallery-column_image relative mt-8">
+                    <div class="overlay"> <a class="image-card__profile ml-2" href="https://unsplash.com/@hiestudio">
+                            Zhao
+                            Yangyang </a>
+                    </div>
+                    <img srcset="./assets/Picture-13_small.jpeg 600w, 
                              ./assets/Picture-13_medium.jpeg 800w, 
                              ./assets/Picture-13_large.jpeg 1500w" sizes="
                              (min-width: 980px) 31vw,
                              (min-width: 700px) and (max-width: 980px) 45vw,
                              100vw" alt="picture-13" src="./assets/Picture-13_medium.jpeg" loading="lazy" />
-                <img srcset="./assets/Picture-14_small.jpeg 600w, 
+                    <div class="overlay flex justify-between">
+                        <div class="flex justify-between gap-2">
+                            <button class="image-card__add-button " type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                                </svg> </button>
+                            <button class=" image-card__like-button" type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path
+                                        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+                                </svg> </button>
+                        </div>
+                        <button class=" image-card__download-button" type="button"> <svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zM432 456c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z" />
+                            </svg> </button>
+                    </div>
+                </div>
+
+
+                <div class="gallery-column_image relative mt-8">
+                    <div class="overlay"> <a class="image-card__profile ml-2" href="https://unsplash.com/@hiestudio">
+                            Zhao
+                            Yangyang </a>
+                    </div>
+                    <img srcset="./assets/Picture-14_small.jpeg 600w, 
                              ./assets/Picture-14_medium.jpeg 800w, 
                              ./assets/Picture-14_large.jpeg 1500w" sizes="
                              (min-width: 980px) 31vw,
                              (min-width: 700px) and (max-width: 980px) 45vw,
                              100vw" alt="picture-14" src="./assets/Picture-14_medium.jpeg" loading="lazy" />
-                <img srcset="./assets/Picture-15_small.jpeg 600w, 
+                    <div class="overlay flex justify-between">
+                        <div class="flex justify-between gap-2">
+                            <button class="image-card__add-button " type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                                </svg> </button>
+                            <button class=" image-card__like-button" type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path
+                                        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+                                </svg> </button>
+                        </div>
+                        <button class=" image-card__download-button" type="button"> <svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zM432 456c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z" />
+                            </svg> </button>
+                    </div>
+                </div>
+
+                <div class="gallery-column_image relative mt-8">
+                    <div class="overlay"> <a class="image-card__profile ml-2" href="https://unsplash.com/@hiestudio">
+                            Zhao
+                            Yangyang </a>
+                    </div>
+                    <img srcset="./assets/Picture-15_small.jpeg 600w, 
                              ./assets/Picture-15_medium.jpeg 800w, 
                              ./assets/Picture-15_large.jpeg 1500w" sizes="
                              (min-width: 980px) 31vw,
                              (min-width: 700px) and (max-width: 980px) 45vw,
                              100vw" alt="picture-15" src="./assets/Picture-15_medium.jpeg" loading="lazy" />
-                <img srcset="./assets/Picture-16_small.jpeg 600w, 
+                    <div class="overlay flex justify-between">
+                        <div class="flex justify-between gap-2">
+                            <button class="image-card__add-button " type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                                </svg> </button>
+                            <button class=" image-card__like-button" type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path
+                                        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+                                </svg> </button>
+                        </div>
+                        <button class=" image-card__download-button" type="button"> <svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zM432 456c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z" />
+                            </svg> </button>
+                    </div>
+                </div>
+
+                <div class="gallery-column_image relative mt-8">
+                    <div class="overlay"> <a class="image-card__profile ml-2" href="https://unsplash.com/@hiestudio">
+                            Zhao
+                            Yangyang </a>
+                    </div>
+                    <img srcset="./assets/Picture-16_small.jpeg 600w, 
                              ./assets/Picture-16_medium.jpeg 800w, 
                              ./assets/Picture-16_large.jpeg 1500w" sizes="
                              (min-width: 980px) 31vw,
                              (min-width: 700px) and (max-width: 980px) 45vw,
                              100vw" alt="picture-16" src="./assets/Picture-16_medium.jpeg" loading="lazy" />
+                    <div class="overlay flex justify-between">
+                        <div class="flex justify-between gap-2">
+                            <button class="image-card__add-button " type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                                </svg> </button>
+                            <button class=" image-card__like-button" type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path
+                                        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+                                </svg> </button>
+                        </div>
+                        <button class=" image-card__download-button" type="button"> <svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zM432 456c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z" />
+                            </svg> </button>
+                    </div>
+                </div>
+
 
             </div>
             <div class="flex column gallery-column">
-                <img srcset="./assets/Picture-17_small.jpeg 400w, 
+                <div class="gallery-column_image relative mt-8">
+                    <div class="overlay"> <a class="image-card__profile ml-2" href="https://unsplash.com/@hiestudio">
+                            Zhao
+                            Yangyang </a>
+                    </div>
+                    <img srcset="./assets/Picture-17_small.jpeg 400w, 
                              ./assets/Picture-17_medium.jpeg 800w, 
                              ./assets/Picture-17_large.jpeg 1500w" sizes="
                              (min-width: 980px) 31vw,
                              (min-width: 700px) and (max-width: 980px) 45vw,
                              100vw" alt="picture-17" src="./assets/Picture-17_medium.jpeg" loading="lazy" />
-                <img srcset="./assets/Picture-18_small.jpeg 600w, 
+                    <div class="overlay flex justify-between">
+                        <div class="flex justify-between gap-2">
+                            <button class="image-card__add-button " type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                                </svg> </button>
+                            <button class=" image-card__like-button" type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path
+                                        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+                                </svg> </button>
+                        </div>
+                        <button class=" image-card__download-button" type="button"> <svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zM432 456c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z" />
+                            </svg> </button>
+                    </div>
+                </div>
+
+
+                <div class="gallery-column_image relative mt-8">
+                    <div class="overlay"> <a class="image-card__profile ml-2" href="https://unsplash.com/@hiestudio">
+                            Zhao
+                            Yangyang </a>
+                    </div>
+                    <img srcset="./assets/Picture-18_small.jpeg 600w, 
                              ./assets/Picture-18_medium.jpeg 800w, 
                              ./assets/Picture-18_large.jpeg 1500w" sizes="
                              (min-width: 980px) 31vw,
                              (min-width: 700px) and (max-width: 980px) 45vw,
                              100vw" alt="picture-18" src="./assets/Picture-18_medium.jpeg" loading="lazy" />
-                <img srcset="./assets/Picture-19_small.jpeg 600w, 
+                    <div class="overlay flex justify-between">
+                        <div class="flex justify-between gap-2">
+                            <button class="image-card__add-button " type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                                </svg> </button>
+                            <button class=" image-card__like-button" type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path
+                                        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+                                </svg> </button>
+                        </div>
+                        <button class=" image-card__download-button" type="button"> <svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zM432 456c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z" />
+                            </svg> </button>
+                    </div>
+                </div>
+
+
+                <div class="gallery-column_image relative mt-8">
+                    <div class="overlay"> <a class="image-card__profile ml-2" href="https://unsplash.com/@hiestudio">
+                            Zhao
+                            Yangyang </a>
+                    </div>
+                    <img srcset="./assets/Picture-19_small.jpeg 600w, 
                              ./assets/Picture-19_medium.jpeg 800w, 
                              ./assets/Picture-19_large.jpeg 1500w" sizes="
                              (min-width: 980px) 31vw,
                              (min-width: 700px) and (max-width: 980px) 45vw,
                              100vw" alt="picture-19" src="./assets/Picture-19_medium.jpeg" loading="lazy" />
-                <img srcset="./assets/Picture-20_small.jpeg 600w, 
+                    <div class="overlay flex justify-between">
+                        <div class="flex justify-between gap-2">
+                            <button class="image-card__add-button " type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                                </svg> </button>
+                            <button class=" image-card__like-button" type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path
+                                        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+                                </svg> </button>
+                        </div>
+                        <button class=" image-card__download-button" type="button"> <svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zM432 456c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z" />
+                            </svg> </button>
+                    </div>
+                </div>
+
+                <div class="gallery-column_image relative mt-8">
+                    <div class="overlay"> <a class="image-card__profile ml-2" href="https://unsplash.com/@hiestudio">
+                            Zhao
+                            Yangyang </a>
+                    </div>
+                    <img srcset="./assets/Picture-20_small.jpeg 600w, 
                              ./assets/Picture-20_medium.jpeg 800w, 
                              ./assets/Picture-20_large.jpeg 1500w" sizes="
                              (min-width: 980px) 31vw,
                              (min-width: 700px) and (max-width: 980px) 45vw,
                              100vw" alt="picture-20" src="./assets/Picture-20_medium.jpeg" loading="lazy" />
-                <img srcset="./assets/Picture-21_small.jpeg 600w, 
+                    <div class="overlay flex justify-between">
+                        <div class="flex justify-between gap-2">
+                            <button class="image-card__add-button " type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                                </svg> </button>
+                            <button class=" image-card__like-button" type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path
+                                        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+                                </svg> </button>
+                        </div>
+                        <button class=" image-card__download-button" type="button"> <svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zM432 456c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z" />
+                            </svg> </button>
+                    </div>
+                </div>
+
+                <div class="gallery-column_image relative mt-8">
+                    <div class="overlay"> <a class="image-card__profile ml-2" href="https://unsplash.com/@hiestudio">
+                            Zhao
+                            Yangyang </a>
+                    </div>
+                    <img srcset="./assets/Picture-21_small.jpeg 600w, 
                              ./assets/Picture-21_medium.jpeg 800w, 
                              ./assets/Picture-21_large.jpeg 1500w" sizes="
                              (min-width: 980px) 31vw,
                              (min-width: 700px) and (max-width: 980px) 45vw,
                              100vw" alt="picture-21" src="./assets/Picture-21_medium.jpeg" loading="lazy" />
-                <img srcset="./assets/Picture-22_small.jpeg 600w, 
+                    <div class="overlay flex justify-between">
+                        <div class="flex justify-between gap-2">
+                            <button class="image-card__add-button " type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                                </svg> </button>
+                            <button class=" image-card__like-button" type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path
+                                        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+                                </svg> </button>
+                        </div>
+                        <button class=" image-card__download-button" type="button"> <svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zM432 456c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z" />
+                            </svg> </button>
+                    </div>
+                </div>
+
+                <div class="gallery-column_image relative mt-8">
+                    <div class="overlay"> <a class="image-card__profile ml-2" href="https://unsplash.com/@hiestudio">
+                            Zhao
+                            Yangyang </a>
+                    </div>
+                    <img srcset="./assets/Picture-22_small.jpeg 600w, 
                              ./assets/Picture-22_medium.jpeg 800w, 
                              ./assets/Picture-22_large.jpeg 1500w" sizes="
                              (min-width: 980px) 31vw,
                              (min-width: 700px) and (max-width: 980px) 45vw,
                              100vw" alt="picture-22" src="./assets/Picture-22_medium.jpeg" loading="lazy" />
-                <img srcset="./assets/Picture-23_small.jpeg 600w, 
+                    <div class="overlay flex justify-between">
+                        <div class="flex justify-between gap-2">
+                            <button class="image-card__add-button " type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                                </svg> </button>
+                            <button class=" image-card__like-button" type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path
+                                        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+                                </svg> </button>
+                        </div>
+                        <button class=" image-card__download-button" type="button"> <svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zM432 456c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z" />
+                            </svg> </button>
+                    </div>
+                </div>
+
+                <div class="gallery-column_image relative mt-8">
+                    <div class="overlay"> <a class="image-card__profile ml-2" href="https://unsplash.com/@hiestudio">
+                            Zhao
+                            Yangyang </a>
+                    </div>
+                    <img srcset="./assets/Picture-23_small.jpeg 600w, 
                              ./assets/Picture-23_medium.jpeg 800w, 
                              ./assets/Picture-23_large.jpeg 1500w" sizes="
                              (min-width: 980px) 31vw,
                              (min-width: 700px) and (max-width: 980px) 45vw,
                              100vw" alt="picture-23" src="./assets/Picture-23_medium.jpeg" loading="lazy" />
-                <img srcset="./assets/Picture-24_small.jpeg 600w, 
+                    <div class="overlay flex justify-between">
+                        <div class="flex justify-between gap-2">
+                            <button class="image-card__add-button " type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                                </svg> </button>
+                            <button class=" image-card__like-button" type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path
+                                        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+                                </svg> </button>
+                        </div>
+                        <button class=" image-card__download-button" type="button"> <svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zM432 456c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z" />
+                            </svg> </button>
+                    </div>
+                </div>
+
+                <div class="gallery-column_image relative mt-8">
+                    <div class="overlay"> <a class="image-card__profile ml-2" href="https://unsplash.com/@hiestudio">
+                            Zhao
+                            Yangyang </a>
+                    </div>
+                    <img srcset="./assets/Picture-24_small.jpeg 600w, 
                              ./assets/Picture-24_medium.jpeg 800w, 
                              ./assets/Picture-24_large.jpeg 1500w" sizes="
                              (min-width: 980px) 31vw,
                              (min-width: 700px) and (max-width: 980px) 45vw,
                              100vw" alt="picture-24" src="./assets/Picture-24_medium.jpeg" loading="lazy" />
+                    <div class="overlay flex justify-between">
+                        <div class="flex justify-between gap-2">
+                            <button class="image-card__add-button " type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                                </svg> </button>
+                            <button class=" image-card__like-button" type="button"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path
+                                        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+                                </svg> </button>
+                        </div>
+                        <button class=" image-card__download-button" type="button"> <svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zM432 456c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z" />
+                            </svg> </button>
+                    </div>
+                </div>
+
             </div>
         </div>
     </main>
